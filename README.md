@@ -84,5 +84,5 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © LightningChart Ltd 2009-2022. All rights reserved.
 
 
-[Gauge Chart]: https://lightningchart.com/js-charts/api-documentation/v6.0.0/classes/GaugeChart.html
+[Gauge Chart]: https://lightningchart.com/js-charts/api-documentation/v6.1.0/classes/GaugeChart.html
 
