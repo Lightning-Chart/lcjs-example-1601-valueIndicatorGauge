@@ -29,8 +29,8 @@ colorPalette.forEach((color, index) => {
 gauge.setValueIndicators(valueIndicators)
 
 // Scale the gauge automatically based on screen size
-gauge.onResize((_, width, height) => {
-    const size = Math.min(width, height)
+gauge.addEventListener('resize', (event) => {
+    const size = Math.min(event.width, event.height)
     gauge
         .setBarThickness(size / 10)
         .setNeedleLength(gauge.getBarThickness() * 2)
