@@ -1,5 +1,5 @@
 const lcjs = require('@lightningchart/lcjs')
-const { lightningChart, Themes } = lcjs
+const { lightningChart, Themes, ColorRGBA } = lcjs
 
 // Create a Gauge chart
 const gauge = lightningChart({
@@ -15,7 +15,7 @@ const gauge = lightningChart({
 
 // Construct value indicator array from a color palette
 const valueIndicators = []
-const colorPalette = gauge.getTheme().examples.coldHotColorPalette
+const colorPalette = [ColorRGBA(54, 75, 255), ColorRGBA(0, 180, 255), ColorRGBA(255, 220, 0), ColorRGBA(255, 50, 10)]
 const intervalStart = -20
 const intervalEnd = 20
 const stepSize = (intervalEnd - intervalStart) / colorPalette.length
